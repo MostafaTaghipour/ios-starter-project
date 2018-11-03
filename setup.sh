@@ -42,6 +42,9 @@ open "$projectName.xcworkspace"
 cd ../
 mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates
 cp -r MTP\ Templates ~/Library/Developer/Xcode/Templates/File\ Templates
-rm -R MTP\ Templates
 echo "   >>>>>> 'MTP Templates' moved to Xcode templates"
+rm -R MTP\ Templates
+rm -R screenshots
+rm -R README.md
+echo "   >>>>>> extra files removed"
 rm -- "$0"

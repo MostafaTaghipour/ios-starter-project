@@ -36,13 +36,18 @@ Dependencies:
 Clone and setup project
 
 ```
-$ git clone https://github.com/MostafaTaghipour/ios-starter-project & sh setup.sh
+$ git clone https://github.com/MostafaTaghipour/ios-starter-project .
+$ sh setup.sh
 ```
 
 Answer the questions
 
 ![questions](/screenshots/1.png)
 
+
+Wait until the setup of the project and install dependencies are completed
+
+Enjoy it
 
 ## Module templates
 
