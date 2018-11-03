@@ -1,0 +1,25 @@
+/* 
+  localizable.strings
+  Common
+
+  Created by Remote User on 9/17/18.
+  Copyright © 2018 hojan. All rights reserved.
+*/
+
+
+/*--------BEGIN PRETTY TIME--------*/
+"time_ago_prefix"="";
+"time_ago_suffix"="پیش";
+"time_ago_moment"="چند لحظه";
+"time_ago_seconds"="کمتر از یک دقیقه";
+"time_ago_minute"="حدود یک دقیقه";
+"time_ago_minutes"="%d دقیقه";
+"time_ago_hour"="حدود یک ساعت";
+"time_ago_hours"="حدود %d ساعت";
+"time_ago_day"="حدود یک روز";
+"time_ago_days"="%d روز";
+"time_ago_month"="حدود یک ماه";
+"time_ago_months"="%d ماه";
+"time_ago_year"="حدود یک سال";
+"time_ago_years"="%d سال";
+/*--------END PRETTY TIME--------*/

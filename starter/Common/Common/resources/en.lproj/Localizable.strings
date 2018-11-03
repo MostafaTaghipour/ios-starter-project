@@ -1,0 +1,25 @@
+/* 
+  localizable.strings
+  Common
+
+  Created by Remote User on 9/17/18.
+  Copyright © 2018 hojan. All rights reserved.
+*/
+
+
+/*--------BEGIN PRETTY TIME--------*/
+"time_ago_prefix"="";
+"time_ago_suffix"="ago";
+"time_ago_moment"="few moments";
+"time_ago_seconds"="Less than a minute";
+"time_ago_minute"="About a minute";
+"time_ago_minutes"="%d minutes";
+"time_ago_hour"="About an hour";
+"time_ago_hours"="%d hours";
+"time_ago_day"="About a day";
+"time_ago_days"="%d days";
+"time_ago_month"="About a month";
+"time_ago_months"="%d months";
+"time_ago_year"="About a year";
+"time_ago_years"="%d years";
+/*--------END PRETTY TIME--------*/

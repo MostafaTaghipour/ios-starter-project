@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Light</key>
+	<string>Vazir-Light-FD</string>
+	<key>Bold</key>
+	<string>Vazir-Bold-FD</string>
+	<key>Semibold</key>
+	<string>Vazir-Bold-FD</string>
+	<key>Regular</key>
+	<string>Vazir-Medium-FD</string>
+</dict>
+</plist>

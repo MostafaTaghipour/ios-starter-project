@@ -1,0 +1,16 @@
+//
+//  Development.xcconfig
+//  project
+//
+//  Created by Remote User on 10/14/18.
+//  Copyright © 2018 hojan. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = Starter (Dev)
+APP_BUNDLE_ID = ir.rainyday.ios.starter.dev
+APP_ICON = AppIconDev
+
+

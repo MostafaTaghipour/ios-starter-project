@@ -1,0 +1,99 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'starter' do
+    
+    # Reactive Programming in Swift -> https://github.com/ReactiveX/RxSwift
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    
+    # Firebase is Google's mobile platform (Analytics, Crashlytics) -> https://console.firebase.google.com
+    pod 'Firebase/Core'
+    pod 'Fabric'
+    pod 'Crashlytics'
+    
+    # Dependency injection framework for Swift -> https://github.com/Swinject/Swinject
+    # + extension for automatic dependency injection via Storyboard -> https://github.com/Swinject/SwinjectStoryboard
+    # + extension to automatically register your services -> https://github.com/Swinject/SwinjectAutoregistration
+    pod 'Swinject'
+    pod 'SwinjectStoryboard'
+    pod 'SwinjectAutoregistration'
+    
+    # mobile database: a replacement for Core Data & SQLite -> https://realm.io/docs/swift/latest
+    # + RxSwift extension -> https://github.com/RxSwiftCommunity/RxRealm
+    pod 'RealmSwift'
+    pod 'RxRealm'
+    
+    # Network abstraction layer written in Swift -> https://github.com/Moya/Moya
+    pod 'Moya/RxSwift'
+    
+    # A lightweight library for downloading and caching images from the web -> https://github.com/onevcat/Kingfisher
+    pod 'Kingfisher'
+    
+    # Replacement for Apple's Reachability re-written in Swift with closures -> https://github.com/ashleymills/Reachability.swift
+    pod 'ReachabilitySwift'
+    
+    # Get strong typed, autocompleted resources in Swift projects -> https://github.com/mac-cain13/R.swift
+    pod 'R.swift'
+    pod 'R.swift.Library'
+    
+    # An iOS theme manager -> https://github.com/MostafaTaghipour/mtpThemeManager
+    pod 'mtpThemeManager'
+    
+    # A font manager for iOS to apply custom font to whole app -> https://github.com/MostafaTaghipour/mtpFontManager
+    pod 'mtpFontManager'
+    
+    # The best choice for you if you want to have a multi-language app -> https://github.com/MostafaTaghipour/mtpLocaleManager
+    pod 'mtpLocaleManager'
+    
+    # UITextField + ActionSheet + (UIPickerView, UIDatePicker, UITableView, UICollectionView) -> https://github.com/MostafaTaghipour/mtpPickerField
+    pod 'mtpPickerField'
+    
+    # A data-driven UICollectionView and UITableView framework for building fast and flexible lists -> https://github.com/MostafaTaghipour/iOSEasyList
+    pod 'iOSEasyList'
+    
+    # Incrementally update your Strings files -> https://github.com/Flinesoft/BartyCrouch
+    pod 'BartyCrouch'
+    
+    # Prevent issues of keyboard sliding up and cover UITextField/UITextView -> https://github.com/hackiftekhar/IQKeyboardManager
+    pod 'IQKeyboardManagerSwift'
+    
+    # Closure support for handling gesture recognizers in Swift -> https://github.com/marcbaldwin/GestureRecognizerClosures
+    pod 'GestureRecognizerClosures'
+    
+    # Securely save data using strong AES 256-bit encryption in UserDefault -> https://github.com/nielsmouthaan/SecureNSUserDefaults
+    pod 'SecureNSUserDefaults'
+    
+    # A very flexible message bar for iOS written in Swift -> https://github.com/SwiftKickMobile/SwiftMessages
+    pod 'SwiftMessages'
+    
+    # PopupViewController, for both iPhone and iPad -> https://github.com/kevin0571/STPopup
+    pod 'STPopup'
+    
+    # A publish/subscribe EventBus optimized for iOS -> https://github.com/cesarferreira/SwiftEventBus
+    pod 'SwiftEventBus'
+    
+    # Find retain cycles / memory leaks sooner -> https://github.com/krzysztofzablocki/LifetimeTracker
+    pod 'LifetimeTracker'
+    
+end
+
+
+#################### set libraries swift version ###################
+DEFAULT_SWIFT_VERSION = '4.2'
+
+POD_SWIFT_VERSION_MAP = {
+    'R.swift.Library' => '4.0',
+    'R.swift' => '4.0',
+    'LifetimeTracker' => '3.0',
+}
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        swift_version = POD_SWIFT_VERSION_MAP[target.name] || DEFAULT_SWIFT_VERSION
+        puts "Setting #{target.name} Swift version to #{swift_version}"
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = swift_version
+        end
+    end
+end
