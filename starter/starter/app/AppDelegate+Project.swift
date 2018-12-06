@@ -49,6 +49,14 @@ extension AppDelegate{
         //todo: uncomment this line 
         //FirebaseApp.configure()
         
+        //Hot Reload
+        //InjectionApp is a Runtime Code Injection for Objective-C & Swift
+        //If you want use it you must download injection app from (https://itunes.apple.com/us/app/injectioniii/id1380446739?ls=1&mt=12)
+        //Run Injection app before run app on simulator
+        //Select project directory if asked
+        //todo: uncomment this line
+        //HotReloader.activate()
+        
         //start
         Navigator.start()
     }

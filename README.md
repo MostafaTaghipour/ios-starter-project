@@ -36,8 +36,7 @@ Dependencies:
 Clone and setup project
 
 ```
-$ git clone https://github.com/MostafaTaghipour/ios-starter-project .
-$ sh setup.sh
+$ git clone https://github.com/MostafaTaghipour/ios-starter-project . && sh setup.sh
 ```
 
 Answer the questions

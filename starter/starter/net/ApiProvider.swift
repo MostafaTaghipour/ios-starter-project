@@ -15,8 +15,6 @@ import Common
 class ApiProvider<Target> where  Target:TargetType{
     
     let provider:MoyaProvider<Target>!
-    let disposeBag = DisposeBag()
-    
     
     init() {
         

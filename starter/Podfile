@@ -52,9 +52,6 @@ target 'starter' do
     # A data-driven UICollectionView and UITableView framework for building fast and flexible lists -> https://github.com/MostafaTaghipour/iOSEasyList
     pod 'iOSEasyList'
     
-    # Incrementally update your Strings files -> https://github.com/Flinesoft/BartyCrouch
-    pod 'BartyCrouch'
-    
     # Prevent issues of keyboard sliding up and cover UITextField/UITextView -> https://github.com/hackiftekhar/IQKeyboardManager
     pod 'IQKeyboardManagerSwift'
     

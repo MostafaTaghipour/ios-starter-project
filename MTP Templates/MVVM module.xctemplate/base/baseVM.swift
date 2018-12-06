@@ -7,7 +7,11 @@ import Common
 import SwinjectAutoregistration
 
 class BaseViewModel : NSObject {
-    let disposeBag = DisposeBag()
+    
+    lazy var disposeBag: DisposeBag = {
+        return DisposeBag()
+    }()
+    
     weak var appDelegate: AppDelegate? = inject()
     
     var noInternetAccess:Bool{

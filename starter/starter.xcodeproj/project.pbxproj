@@ -60,6 +60,7 @@
 		9FE12236204FAEEA004C58F0 /* SampleJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE12235204FAEEA004C58F0 /* SampleJson.swift */; };
 		9FEA95301FA472DC0030C524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA952F1FA472DC0030C524 /* AppDelegate.swift */; };
 		9FEA95371FA472DC0030C524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEA95361FA472DC0030C524 /* Assets.xcassets */; };
+		DA7CD14921B864CD002A75B1 /* HotReloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CD14821B864CD002A75B1 /* HotReloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -151,6 +152,7 @@
 		9FEA95361FA472DC0030C524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FEA953B1FA472DC0030C524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FFC5A991FDFED5D009752D4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DA7CD14821B864CD002A75B1 /* HotReloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotReloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +318,7 @@
 				9F12A16E214F714300CDBF7F /* ReachabilityManager.swift */,
 				9F12A16C214F711200CDBF7F /* rxHelper.swift */,
 				9F12A168214F704000CDBF7F /* MessageHelper.swift */,
+				DA7CD14821B864CD002A75B1 /* HotReloader.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -435,7 +438,6 @@
 				9FEA952A1FA472DC0030C524 /* Resources */,
 				9F3AC57F2047CFB500EB79C0 /* Embed App Extensions */,
 				9F58370D216DE5AA004C4C64 /* Embed Frameworks */,
-				9F857BCC2174B4CF003877D4 /* Barty Crouch Run Script */,
 				9F857BCF2174B88B003877D4 /* Crashlytics Run Script */,
 			);
 			buildRules = (
@@ -527,20 +529,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"\n";
 		};
-		9F857BCC2174B4CF003877D4 /* Barty Crouch Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Barty Crouch Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/BartyCrouch/bartycrouch\" interfaces -p \"$PROJECT_DIR\"\n";
-		};
 		9F857BCF2174B88B003877D4 /* Crashlytics Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,6 +561,7 @@
 				9F77DB561FF76E83002B8293 /* MessageEvent.swift in Sources */,
 				9FB1E42D215FA1D900456E68 /* AppAssembler.swift in Sources */,
 				9FCA3EDC1FA8AE9A00536128 /* HttpError.swift in Sources */,
+				DA7CD14921B864CD002A75B1 /* HotReloader.swift in Sources */,
 				9F12A16F214F714400CDBF7F /* ReachabilityManager.swift in Sources */,
 				9F209A171FEFCF410099AEB8 /* SampleEntity.swift in Sources */,
 				9FACEE491FA9A48400EAD29F /* LoggerPlugin.swift in Sources */,

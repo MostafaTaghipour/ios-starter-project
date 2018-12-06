@@ -52,13 +52,6 @@ class BaseViewController: SuperViewController   {
         onDisappeared()
     }
     
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        on_view_ready()
-    }
-    
-    
     override func willRotate(to orientation: UIDeviceOrientation) {
         dismissKeyboard()
     }
@@ -70,7 +63,6 @@ class BaseViewController: SuperViewController   {
     func onAppeared(){}
     func onPreDisappear(){}
     func onDisappeared(){}
-    func on_view_ready(){}
     
 
 
