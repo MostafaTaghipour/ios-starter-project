@@ -63,6 +63,10 @@ Templates:
 - [ ] MVP
 
 
+## Author
+
+Mostafa Taghipour, mostafa@taghipour.me
+
 ## License
 
 Copyright © 2018 Mostafa Taghipour. 
