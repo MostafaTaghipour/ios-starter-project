@@ -199,6 +199,7 @@
 		9F102B911FA4963F00E39E38 /* net */ = {
 			isa = PBXGroup;
 			children = (
+				9F12A16E214F714300CDBF7F /* ReachabilityManager.swift */,
 				9FCA3EDA1FA8AD8300536128 /* HttpStatusCode.swift */,
 				9FACEE461FA998E600EAD29F /* ErrorHandeling.swift */,
 				9FACEE481FA9A48400EAD29F /* LoggerPlugin.swift */,
@@ -315,7 +316,6 @@
 			isa = PBXGroup;
 			children = (
 				9F34B5011FD2D27200080AC6 /* AppHelper+.swift */,
-				9F12A16E214F714300CDBF7F /* ReachabilityManager.swift */,
 				9F12A16C214F711200CDBF7F /* rxHelper.swift */,
 				9F12A168214F704000CDBF7F /* MessageHelper.swift */,
 				DA7CD14821B864CD002A75B1 /* HotReloader.swift */,
