@@ -41,7 +41,7 @@ extension ___VARIABLE_productName:identifier___DataSource {
 
 // web api
 enum ___VARIABLE_productName:identifier___Api {
-    case getAll()
+    case getAll
     case get(id: Int64)
     case delete(id: Int64)
     case insert(body: ___VARIABLE_productName:identifier___Json)

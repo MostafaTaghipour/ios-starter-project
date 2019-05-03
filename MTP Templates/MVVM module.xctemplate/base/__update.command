@@ -198,20 +198,20 @@ ln -f baseVM.swift ../XIBBaseRemote/BaseViewModel.swift
 ln -f baseVM.swift ../XIBBaseRemoteLocal/BaseViewModel.swift
 
 #base viewController
-ln -f baseVC.swift ../NoneBase/BaseViewController.swift
-ln -f baseVC.swift ../NoneBaseLocal/BaseViewController.swift
-ln -f baseVC.swift ../NoneBaseRemote/BaseViewController.swift
-ln -f baseVC.swift ../NoneBaseRemoteLocal/BaseViewController.swift
+ln -f baseVC.swift ../NoneBase/BaseMVVMViewController.swift
+ln -f baseVC.swift ../NoneBaseLocal/BaseMVVMViewController.swift
+ln -f baseVC.swift ../NoneBaseRemote/BaseMVVMViewController.swift
+ln -f baseVC.swift ../NoneBaseRemoteLocal/BaseMVVMViewController.swift
 
-ln -f baseVC.swift ../StoryboardBase/BaseViewController.swift
-ln -f baseVC.swift ../StoryboardBaseLocal/BaseViewController.swift
-ln -f baseVC.swift ../StoryboardBaseRemote/BaseViewController.swift
-ln -f baseVC.swift ../StoryboardBaseRemoteLocal/BaseViewController.swift
+ln -f baseVC.swift ../StoryboardBase/BaseMVVMViewController.swift
+ln -f baseVC.swift ../StoryboardBaseLocal/BaseMVVMViewController.swift
+ln -f baseVC.swift ../StoryboardBaseRemote/BaseMVVMViewController.swift
+ln -f baseVC.swift ../StoryboardBaseRemoteLocal/BaseMVVMViewController.swift
 
-ln -f baseVC.swift ../XIBBase/BaseViewController.swift
-ln -f baseVC.swift ../XIBBaseLocal/BaseViewController.swift
-ln -f baseVC.swift ../XIBBaseRemote/BaseViewController.swift
-ln -f baseVC.swift ../XIBBaseRemoteLocal/BaseViewController.swift
+ln -f baseVC.swift ../XIBBase/BaseMVVMViewController.swift
+ln -f baseVC.swift ../XIBBaseLocal/BaseMVVMViewController.swift
+ln -f baseVC.swift ../XIBBaseRemote/BaseMVVMViewController.swift
+ln -f baseVC.swift ../XIBBaseRemoteLocal/BaseMVVMViewController.swift
 
 #viewcontroller + viewModel
 ln -f vc+vm.swift ../None/___FILEBASENAME___ViewController+ViewModel.swift

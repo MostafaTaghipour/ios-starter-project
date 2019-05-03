@@ -80,9 +80,7 @@ end
 DEFAULT_SWIFT_VERSION = '4.2'
 
 POD_SWIFT_VERSION_MAP = {
-    'R.swift.Library' => '4.0',
-    'R.swift' => '4.0',
-    'LifetimeTracker' => '3.0',
+	# 'R.swift' => '4.0',
 }
 
 post_install do |installer|

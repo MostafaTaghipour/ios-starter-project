@@ -13,11 +13,19 @@ import SwinjectStoryboard
 @UIApplicationMain
 class AppDelegate: SuperAppDelegate{
 
-    var isConnectToInternet=true
+    var isConnectToInternet=false
     let assembler = AppAssembler(container: SwinjectStoryboard.defaultContainer)
     
-    override func applicationDidLaunch(_ application: UIApplication, launchOptions: [UIApplication.LaunchOptionsKey : Any]?) {
+    override func appDidLaunch(_ application: UIApplication, launchOptions: [UIApplication.LaunchOptionsKey : Any]?) {
         initApp(application: application, launchOptions: launchOptions)
+    }
+    
+    override func appDidEnterBackground(_ application: UIApplication) {
+        // code here
+    }
+    
+    override func appWillEnterForeground(_ application: UIApplication) {
+         // code here
     }
 }
 

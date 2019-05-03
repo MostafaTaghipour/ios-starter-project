@@ -36,7 +36,7 @@ class AppAssembler{
         container.register(UIWindow.self){r in (r~>AppDelegate.self).window!}.inObjectScope(.container)
         container.register(UserDefaults.self){_ in UserDefaults.standard}
         container.autoregister(CredentionalsRepo.self, initializer: SecureUserDefaultsRepo.init).inObjectScope(.container)
-        container.register(AppFont.self){_ in AppFont.shared}.inObjectScope(.container)
+        container.register(AppFont.self){_ in FontManager.shared.currentFont!}.inObjectScope(.container)
         container.register(ThemeManager.self){_ in ThemeManager.shared}.inObjectScope(.container)
         container.register(LocaleManager.self){_ in LocaleManager.shared}.inObjectScope(.container)
         container.register(AppTheme.self){ r in (r~>ThemeManager.self).currentTheme as! AppTheme}

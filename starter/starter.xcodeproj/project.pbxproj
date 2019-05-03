@@ -14,7 +14,6 @@
 		9F12A16D214F711200CDBF7F /* rxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12A16C214F711200CDBF7F /* rxHelper.swift */; };
 		9F12A16F214F714400CDBF7F /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12A16E214F714300CDBF7F /* ReachabilityManager.swift */; };
 		9F142F2D21622B2C003E59E2 /* CredentionalRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F142F2C21622B2C003E59E2 /* CredentionalRepo.swift */; };
-		9F209A171FEFCF410099AEB8 /* SampleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F209A161FEFCF400099AEB8 /* SampleEntity.swift */; };
 		9F2629E61FD0059100FFFBF5 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2629E51FD0059100FFFBF5 /* Themes.swift */; };
 		9F2DEFD11FDBE3F600B4AD8A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DEFD01FDBE3F600B4AD8A /* AppConstants.swift */; };
 		9F34B4DD1FD29F9A00080AC6 /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34B4DB1FD29F9A00080AC6 /* MainTBC.swift */; };
@@ -26,7 +25,6 @@
 		9F4459321FAD8A6E0070DCDF /* composeForIoTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4459311FAD8A6E0070DCDF /* composeForIoTasks.swift */; };
 		9F4459341FAD8AC90070DCDF /* AlamofireSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4459331FAD8AC90070DCDF /* AlamofireSessionManager.swift */; };
 		9F4C90542169D47A0033420C /* HttpErrorBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C90532169D47A0033420C /* HttpErrorBody.swift */; };
-		9F506FA420871F3400454A1A /* SampleTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F506FA320871F3400454A1A /* SampleTransformer.swift */; };
 		9F58370B216DE5AA004C4C64 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F58370A216DE5AA004C4C64 /* Common.framework */; };
 		9F58370C216DE5AA004C4C64 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F58370A216DE5AA004C4C64 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F5871F01FA608C8009769BF /* NavigationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5871EF1FA608C8009769BF /* NavigationEvent.swift */; };
@@ -51,16 +49,15 @@
 		9FACEE4B1FA9A4A800EAD29F /* NetworkActivityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FACEE4A1FA9A4A800EAD29F /* NetworkActivityPlugin.swift */; };
 		9FACEE4D1FA9A4D300EAD29F /* TokenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FACEE4C1FA9A4D300EAD29F /* TokenPlugin.swift */; };
 		9FB1E42D215FA1D900456E68 /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB1E42C215FA1D900456E68 /* AppAssembler.swift */; };
-		9FB29FCB2007355A00F40F2A /* SampleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB29FCA2007355A00F40F2A /* SampleDTO.swift */; };
 		9FCA3EDC1FA8AE9A00536128 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA3EDB1FA8AE9A00536128 /* HttpError.swift */; };
 		9FCA3EDE1FA8AF6D00536128 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA3EDD1FA8AF6D00536128 /* BaseError.swift */; };
 		9FCA3EE11FA8B9B500536128 /* HttpStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA3EDA1FA8AD8300536128 /* HttpStatusCode.swift */; };
 		9FCAC2961FA705D80037482B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCAC2951FA705D80037482B /* Color.swift */; };
 		9FCF151D2189E2E400BC0387 /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF151A2189E2E400BC0387 /* Errors.strings */; };
-		9FE12236204FAEEA004C58F0 /* SampleJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE12235204FAEEA004C58F0 /* SampleJson.swift */; };
 		9FEA95301FA472DC0030C524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA952F1FA472DC0030C524 /* AppDelegate.swift */; };
 		9FEA95371FA472DC0030C524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEA95361FA472DC0030C524 /* Assets.xcassets */; };
 		DA7CD14921B864CD002A75B1 /* HotReloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CD14821B864CD002A75B1 /* HotReloader.swift */; };
+		DAC5C30C227B7857004062A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5C30B227B7857004062A3 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -99,7 +96,6 @@
 		9F12A16C214F711200CDBF7F /* rxHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rxHelper.swift; sourceTree = "<group>"; };
 		9F12A16E214F714300CDBF7F /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		9F142F2C21622B2C003E59E2 /* CredentionalRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentionalRepo.swift; sourceTree = "<group>"; };
-		9F209A161FEFCF400099AEB8 /* SampleEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEntity.swift; sourceTree = "<group>"; };
 		9F2629E51FD0059100FFFBF5 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		9F2DEFD01FDBE3F600B4AD8A /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		9F34B4DB1FD29F9A00080AC6 /* MainTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
@@ -115,7 +111,6 @@
 		9F4459311FAD8A6E0070DCDF /* composeForIoTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = composeForIoTasks.swift; sourceTree = "<group>"; };
 		9F4459331FAD8AC90070DCDF /* AlamofireSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireSessionManager.swift; sourceTree = "<group>"; };
 		9F4C90532169D47A0033420C /* HttpErrorBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrorBody.swift; sourceTree = "<group>"; };
-		9F506FA320871F3400454A1A /* SampleTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTransformer.swift; sourceTree = "<group>"; };
 		9F58370A216DE5AA004C4C64 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5871EF1FA608C8009769BF /* NavigationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationEvent.swift; sourceTree = "<group>"; };
 		9F5F0B7C1FD001E0009B1A73 /* AppFonts.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppFonts.plist; sourceTree = "<group>"; };
@@ -139,20 +134,19 @@
 		9FACEE4A1FA9A4A800EAD29F /* NetworkActivityPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityPlugin.swift; sourceTree = "<group>"; };
 		9FACEE4C1FA9A4D300EAD29F /* TokenPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenPlugin.swift; sourceTree = "<group>"; };
 		9FB1E42C215FA1D900456E68 /* AppAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
-		9FB29FCA2007355A00F40F2A /* SampleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDTO.swift; sourceTree = "<group>"; };
 		9FCA3EDA1FA8AD8300536128 /* HttpStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpStatusCode.swift; sourceTree = "<group>"; };
 		9FCA3EDB1FA8AE9A00536128 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		9FCA3EDD1FA8AF6D00536128 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
 		9FCAC2951FA705D80037482B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9FCF151B2189E2E400BC0387 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Errors.strings; sourceTree = "<group>"; };
 		9FCF151C2189E2E400BC0387 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Errors.strings; sourceTree = "<group>"; };
-		9FE12235204FAEEA004C58F0 /* SampleJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJson.swift; sourceTree = "<group>"; };
 		9FEA952C1FA472DC0030C524 /* starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEA952F1FA472DC0030C524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FEA95361FA472DC0030C524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FEA953B1FA472DC0030C524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FFC5A991FDFED5D009752D4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DA7CD14821B864CD002A75B1 /* HotReloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotReloader.swift; sourceTree = "<group>"; };
+		DAC5C30B227B7857004062A3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,7 +320,6 @@
 		9F506FA020871DE000454A1A /* transformer */ = {
 			isa = PBXGroup;
 			children = (
-				9F506FA320871F3400454A1A /* SampleTransformer.swift */,
 			);
 			path = transformer;
 			sourceTree = "<group>";
@@ -334,7 +327,6 @@
 		9F506FAB2087240C00454A1A /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				9F209A161FEFCF400099AEB8 /* SampleEntity.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -342,7 +334,6 @@
 		9F506FAC2087241C00454A1A /* dto */ = {
 			isa = PBXGroup;
 			children = (
-				9FB29FCA2007355A00F40F2A /* SampleDTO.swift */,
 			);
 			path = dto;
 			sourceTree = "<group>";
@@ -359,6 +350,7 @@
 			children = (
 				9F6B8BA22187230800B4402D /* BaseCellCustomFont.swift */,
 				9F6B8BA52187230800B4402D /* BaseRealmDataSource.swift */,
+				DAC5C30B227B7857004062A3 /* BaseViewController.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -410,7 +402,6 @@
 		9FED6A8A2168EA2D00C28C88 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				9FE12235204FAEEA004C58F0 /* SampleJson.swift */,
 				9F4C90532169D47A0033420C /* HttpErrorBody.swift */,
 			);
 			path = json;
@@ -456,7 +447,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = hojan;
 				TargetAttributes = {
 					9FEA952B1FA472DC0030C524 = {
@@ -521,13 +512,15 @@
 			files = (
 			);
 			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
 			);
 			name = "R Swift Run Script";
 			outputPaths = (
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		9F857BCF2174B88B003877D4 /* Crashlytics Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -553,7 +546,6 @@
 			files = (
 				9F34B5021FD2D27200080AC6 /* AppHelper+.swift in Sources */,
 				9FEA95301FA472DC0030C524 /* AppDelegate.swift in Sources */,
-				9FB29FCB2007355A00F40F2A /* SampleDTO.swift in Sources */,
 				9F857BCE2174B616003877D4 /* R.generated.swift in Sources */,
 				9F36720A20131BAC00108B35 /* BusEvents.swift in Sources */,
 				9F0D581B1FAF23F900BAE5AA /* UserAgentToken.swift in Sources */,
@@ -563,12 +555,10 @@
 				9FCA3EDC1FA8AE9A00536128 /* HttpError.swift in Sources */,
 				DA7CD14921B864CD002A75B1 /* HotReloader.swift in Sources */,
 				9F12A16F214F714400CDBF7F /* ReachabilityManager.swift in Sources */,
-				9F209A171FEFCF410099AEB8 /* SampleEntity.swift in Sources */,
 				9FACEE491FA9A48400EAD29F /* LoggerPlugin.swift in Sources */,
 				9F2629E61FD0059100FFFBF5 /* Themes.swift in Sources */,
 				9F2DEFD11FDBE3F600B4AD8A /* AppConstants.swift in Sources */,
 				9F73C8381FA9E23000F608B0 /* ApiProvider.swift in Sources */,
-				9F506FA420871F3400454A1A /* SampleTransformer.swift in Sources */,
 				9F4C90542169D47A0033420C /* HttpErrorBody.swift in Sources */,
 				9F7E4C991FAF00DF00522480 /* Moya+.swift in Sources */,
 				9F142F2D21622B2C003E59E2 /* CredentionalRepo.swift in Sources */,
@@ -577,11 +567,11 @@
 				9FACEE4D1FA9A4D300EAD29F /* TokenPlugin.swift in Sources */,
 				9F6B8BA62187230800B4402D /* BaseCellCustomFont.swift in Sources */,
 				9F34B4DD1FD29F9A00080AC6 /* MainTBC.swift in Sources */,
+				DAC5C30C227B7857004062A3 /* BaseViewController.swift in Sources */,
 				9F12A169214F704000CDBF7F /* MessageHelper.swift in Sources */,
 				9FCAC2961FA705D80037482B /* Color.swift in Sources */,
 				9F5871F01FA608C8009769BF /* NavigationEvent.swift in Sources */,
 				9FACEE4B1FA9A4A800EAD29F /* NetworkActivityPlugin.swift in Sources */,
-				9FE12236204FAEEA004C58F0 /* SampleJson.swift in Sources */,
 				9FCA3EE11FA8B9B500536128 /* HttpStatusCode.swift in Sources */,
 				9F6B8BA92187230800B4402D /* BaseRealmDataSource.swift in Sources */,
 				9F73C83A1FA9F4A200F608B0 /* RequestwithProgress.swift in Sources */,
@@ -643,6 +633,7 @@
 			baseConfigurationReference = 9F0691C321732676003F2DF3 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -725,6 +716,7 @@
 			baseConfigurationReference = 9F0691C121732656003F2DF3 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -757,6 +749,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -767,6 +760,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ENV_DEV;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -800,6 +794,7 @@
 			baseConfigurationReference = 9F0691C221732666003F2DF3 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -875,6 +870,7 @@
 			baseConfigurationReference = 9F0691C221732666003F2DF3 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -957,6 +953,7 @@
 			baseConfigurationReference = 9F0691C121732656003F2DF3 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1017,6 +1014,7 @@
 			baseConfigurationReference = 9F0691C321732676003F2DF3 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

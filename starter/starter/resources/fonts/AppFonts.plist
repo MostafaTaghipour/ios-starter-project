@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Id</key>
+	<integer>1</integer>
+	<key>Family Name</key>
+	<string>Vazir</string>
+	<key>Default</key>
+	<string>Vazir-Medium-FD</string>
 	<key>Light</key>
 	<string>Vazir-Light-FD</string>
 	<key>Bold</key>

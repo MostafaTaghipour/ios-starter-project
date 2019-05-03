@@ -43,7 +43,7 @@ extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Respo
 // With Observable
 public extension ObservableType where E == Response {
     
-    public func retryWhenTimeOut(maxAttempts:Int=3) ->  Observable<Response> {
+     func retryWhenTimeOut(maxAttempts:Int=3) ->  Observable<Response> {
         return self.retryWhen{ (e: Observable<Error>) in
             Observable.zip(e, Observable.range(start: 1, count: maxAttempts)/*, resultSelector: { $1 }*/)
                 .flatMap({ (err,i) -> Observable<Int>  in
@@ -109,7 +109,7 @@ extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Respo
 
 // With Observable
 public extension ObservableType where E == Response {
-    public func mapHttpError() ->  Observable<Response> {
+     func mapHttpError() ->  Observable<Response> {
         return self.catchError({ (error) -> Observable<E> in
             
             if let moyaError = error as? MoyaError{
@@ -205,7 +205,7 @@ extension PrimitiveSequence where TraitType == SingleTrait, ElementType == Respo
 public extension ObservableType where E == Response {
     /// Tries to refresh auth token on 401 errors and retry the request.
     /// If the refresh fails, the signal errors.
-    public func retryWithAuthIfNeeded(maxAttempts:Int=3) ->  Observable<Response> {
+    func retryWithAuthIfNeeded(maxAttempts:Int=3) ->  Observable<Response> {
         return self.retryWhen{ (e: Observable<UnauthorizedError>) in
             Observable.zip(e, Observable.range(start: 1, count: maxAttempts)/*, resultSelector: { $1 }*/)
                 .flatMap({ (error,i) -> Observable<Int>  in

@@ -20,6 +20,10 @@ extension AppDelegate{
     
     func initApp(application: UIApplication,launchOptions: [UIApplication.LaunchOptionsKey: Any]?){
         
+        //app config
+        appDefaultOrientation = .allButUpsideDown
+        callViewControllerVisibilityMothodsOnAppVisibilityChange = true
+        
         //IQKeyboardManager config
         IQKeyboardManager.shared.enable = true
         
@@ -29,7 +33,7 @@ extension AppDelegate{
         }
 
         //apply custom font and theme and locale
-        FontManager.setFont(plist: R.file.appFontsPlist.name)
+        FontManager.shared.currentFont = AppFont(plist: R.file.appFontsPlist.name)
         ThemeManager.shared.setTheme(dayNight: RedTheme(), nightModeStatus: .disable)
         LocaleManager.shared.currentLocale = Locale(identifier: CurrentApp.developmentRegion!)
         

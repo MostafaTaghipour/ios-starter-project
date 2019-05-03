@@ -1,17 +1,14 @@
 //  ___FILEHEADER___
 
 import UIKit
-import RxSwift
+
 
 class ___FILEBASENAMEASIDENTIFIER___ : BaseViewController {
     
     @IBOutlet var textField: UITextField!
     @IBOutlet var submitButton: UIButton!
     
-    lazy var disposeBag: DisposeBag = {
-        return DisposeBag()
-    }()
-    
+
     var viewModel:___VARIABLE_productName:identifier___ViewModel?{
         didSet{
             guard let vm = viewModel else { return  }

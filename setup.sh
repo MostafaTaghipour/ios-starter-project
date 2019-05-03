@@ -33,13 +33,7 @@ find . -name 'Production.xcconfig' -print0 | xargs -0 sed -i "" "s/ir.rainyday.i
 find . -name 'Staging.xcconfig' -print0 | xargs -0 sed -i "" "s/ir.rainyday.ios.starter/$bundleId/g"
 find . -name 'Development.xcconfig' -print0 | xargs -0 sed -i "" "s/ir.rainyday.ios.starter/$bundleId/g"
 echo "   >>>>>> Project initialized"
-cd ../../
-echo "   >>>>>> Installing dependencies... , please wait"
-pod install
-echo "   >>>>>> Dependencies installed"
-echo "   >>>>>> Openning project... , please wait"
-open "$projectName.xcworkspace"
-cd ../
+cd ../../../
 mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates
 cp -r MTP\ Templates ~/Library/Developer/Xcode/Templates/File\ Templates
 echo "   >>>>>> 'MTP Templates' moved to Xcode templates"
@@ -47,4 +41,11 @@ rm -R MTP\ Templates
 rm -R screenshots
 rm -R README.md
 echo "   >>>>>> extra files removed"
+cd $projectName
+echo "   >>>>>> Installing dependencies... , please wait"
+pod install
+echo "   >>>>>> Dependencies installed"
+echo "   >>>>>> Openning project... , please wait"
+open "$projectName.xcworkspace"
+cd ../
 rm -- "$0"

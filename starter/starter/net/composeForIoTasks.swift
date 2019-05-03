@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import  Moya
 
-public extension ObservableType where E == Response {
+extension ObservableType where E == Response {
     public func composeForHttpTasks() -> Observable<E> {
         
         return self

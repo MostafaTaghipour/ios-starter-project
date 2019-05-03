@@ -13,7 +13,7 @@ class ___FILEBASENAMEASIDENTIFIER___Imp : ___FILEBASENAMEASIDENTIFIER___{
     
     
     func getFromServer()-> Single<[___VARIABLE_productName:identifier___Json]> {
-        return self.apiProvider.request(.getAll(), responseType: [___VARIABLE_productName:identifier___Json].self)
+        return self.apiProvider.request(.getAll, responseType: [___VARIABLE_productName:identifier___Json].self)
     }
     
     

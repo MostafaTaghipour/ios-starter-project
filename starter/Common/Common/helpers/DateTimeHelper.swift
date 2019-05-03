@@ -71,7 +71,7 @@ extension Date{
 
 //        if components.year! >= 2 {
 //            result = R.string.localizable.yearAgo(components.year!)
-//        } else if components.year! == 1 {
+//        } else if components.year! == 1 {\()
 //                result = R.string.localizable.lastYear()
 //        } else if components.month! >= 2 {
 //            result = R.string.localizable.monthAgo(components.month!)
@@ -250,7 +250,7 @@ public extension Date
     /**
      `true` if the receiver represents a time in the past; `false` otherwise.
      */
-    public var isPast: Bool {
+    var isPast: Bool {
         return timeIntervalSinceNow < 0
     }
     
@@ -258,28 +258,28 @@ public extension Date
     /**
      `true` if the receiver represents a time in the past; `false` otherwise.
      */
-    public var notPast: Bool {
+    var notPast: Bool {
         return !isPast
     }
     
     /**
      `true` if the receiver represents the current time; `false` otherwise.
      */
-    public var isNow: Bool {
+    var isNow: Bool {
         return timeIntervalSinceNow == 0
     }
     
     /**
      `true` if the receiver represents a time in the future; `false` otherwise.
      */
-    public var isFuture: Bool {
+    var isFuture: Bool {
         return timeIntervalSinceNow > 0
     }
     
     /**
      `true` if the receiver represents any time yesterday; `false` otherwise.
      */
-    public var isYesterday: Bool {
+    var isYesterday: Bool {
         let yest = Date.yesterday
         return isBetween(yest.startOfDay, and: yest.endOfDay)
     }
@@ -287,7 +287,7 @@ public extension Date
     /**
      `true` if the receiver represents any time today; `false` otherwise.
      */
-    public var isToday: Bool {
+    var isToday: Bool {
         let now = Date()
         return isBetween(now.startOfDay, and: now.endOfDay)
     }
@@ -295,7 +295,7 @@ public extension Date
     /**
      `true` if the receiver represents any time tomorrow; `false` otherwise.
      */
-    public var isTomorrow: Bool {
+    var isTomorrow: Bool {
         let yest = Date.tomorrow
         return isBetween(yest.startOfDay, and: yest.endOfDay)
     }
@@ -303,7 +303,7 @@ public extension Date
     /**
      `true` if the receiver represents any time nextweek today; `false` otherwise.
      */
-    public var isNextWeek: Bool {
+    var isNextWeek: Bool {
         let nextWeek = Date.nextWeek
         return isBetween(nextWeek.startOfDay, and: nextWeek.endOfDay)
     }
@@ -311,14 +311,14 @@ public extension Date
     /**
      `true` if the receiver represents any time before today; `false` otherwise.
      */
-    public var isBeforeToday: Bool {
+    var isBeforeToday: Bool {
         return self < Date().startOfDay
     }
     
     /**
      `true` if the receiver represents any time after today; `false` otherwise.
      */
-    public var isAfterToday: Bool {
+    var isAfterToday: Bool {
         return self > Date().endOfDay
     }
     
@@ -333,7 +333,7 @@ public extension Date
      - returns: `true` if the receiver represents any time between `time1` and
      `time2` (inclusive); `false` otherwise.
      */
-    public func isBetween(_ time1: Date, and time2: Date)
+    func isBetween(_ time1: Date, and time2: Date)
         -> Bool
     {
         let earlierTime = time1 < time2 ? time1 : time2
@@ -353,7 +353,7 @@ public extension Date
      - returns: `true` if the current time is between `time1` and `time2`
      (inclusive); `false` otherwise.
      */
-    public static func currentTimeIsBetween(_ time1: Date, and time2: Date)
+    static func currentTimeIsBetween(_ time1: Date, and time2: Date)
         -> Bool
     {
         return Date().isBetween(time1, and: time2)
@@ -366,7 +366,7 @@ public extension Date
      - returns: `true` if `date` represents any time on the same day as the
      receiver; `false` otherwise.
      */
-    public func isSameDayAs(_ date: Date)
+    func isSameDayAs(_ date: Date)
         -> Bool
     {
         return isBetween(date.startOfDay, and: date.endOfDay)
@@ -389,7 +389,7 @@ public extension Date
      - parameter nanosecond: The nanosecond component for the returned time.
      - returns: The new `Date` with the time changed.
      */
-    public func changedTime(hour: Int, minute: Int, second: Int, nanosecond: Int)
+    func changedTime(hour: Int, minute: Int, second: Int, nanosecond: Int)
         -> Date
     {
         let calendar = Calendar.current
@@ -406,7 +406,7 @@ public extension Date
      Returns a new `Date` representing the 24-hour time `00:00:00` on the
      same day as the receiver.
      */
-    public var startOfDay: Date {
+    var startOfDay: Date {
         return changedTime(hour: 0, minute: 0, second: 0, nanosecond: 0)
     }
     
@@ -414,7 +414,7 @@ public extension Date
      Returns a new `Date` representing the 24-hour time `23:59:59.999999999`
      on the same day as the receiver.
      */
-    public var endOfDay: Date {
+    var endOfDay: Date {
         return changedTime(hour: 23, minute: 59, second: 59, nanosecond: 999_999_999)
     }
     
@@ -422,7 +422,7 @@ public extension Date
      Returns a new `Date` representing the current time, but with yesterday's
      date.
      */
-    public static var yesterday: Date {
+    static var yesterday: Date {
         return Date().dayBefore
     }
     
@@ -430,7 +430,7 @@ public extension Date
      Returns a new `Date` representing the current time, but with tomorrow's
      date.
      */
-    public static var tomorrow: Date {
+    static var tomorrow: Date {
         return Date().dayAfter
     }
     
@@ -438,7 +438,7 @@ public extension Date
      Returns a new `Date` representing the current time, but with tomorrow's
      date.
      */
-    public static var nextWeek: Date {
+    static var nextWeek: Date {
         return Date().add(component: .day, value: 7)
     }
     
@@ -449,7 +449,7 @@ public extension Date
      from (if negative) the receiver.
      - returns: The new `Date` instance.
      */
-    public func adjustDay(_ days: Int)
+    func adjustDay(_ days: Int)
         -> Date
     {
         return Calendar.current.date(byAdding: .day, value: days, to: self, wrappingComponents: true)!
@@ -460,7 +460,7 @@ public extension Date
      day earlier.
      - returns: The new `Date` instance.
      */
-    public var dayBefore: Date {
+    var dayBefore: Date {
         return adjustDay(-1)
     }
     
@@ -469,7 +469,7 @@ public extension Date
      day later.
      - returns: The new `Date` instance.
      */
-    public var dayAfter: Date {
+    var dayAfter: Date {
         return adjustDay(1)
     }
 }
