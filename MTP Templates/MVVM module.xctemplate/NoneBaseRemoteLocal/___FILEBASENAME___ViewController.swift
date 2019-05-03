@@ -3,7 +3,7 @@
 import UIKit
 
 
-class ___FILEBASENAMEASIDENTIFIER___ : BaseViewController {
+class ___FILEBASENAMEASIDENTIFIER___ : BaseMVVMViewController {
     
     @IBOutlet var textField: UITextField!
     @IBOutlet var submitButton: UIButton!

@@ -4,7 +4,7 @@ import UIKit
 import SwiftEventBus
 import RxSwift
 
-class BaseMVVMViewController: SuperViewController   {
+class BaseMVVMViewController: BaseViewController   {
 
     lazy var disposeBag: DisposeBag = {
         return DisposeBag()
